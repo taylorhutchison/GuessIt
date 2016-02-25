@@ -12,6 +12,7 @@
 		9604BE7B1C7AB04800D4A284 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9604BE791C7AB04800D4A284 /* Main.storyboard */; };
 		9604BE7D1C7AB04800D4A284 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9604BE7C1C7AB04800D4A284 /* Assets.xcassets */; };
 		9604BE801C7AB04800D4A284 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9604BE7E1C7AB04800D4A284 /* LaunchScreen.storyboard */; };
+		968722301C7D37BE0067B834 /* MyScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9687222F1C7D37BE0067B834 /* MyScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9604BE7C1C7AB04800D4A284 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9604BE7F1C7AB04800D4A284 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9604BE811C7AB04800D4A284 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9687222F1C7D37BE0067B834 /* MyScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				9604BE751C7AB04800D4A284 /* AppDelegate.swift */,
 				9604BE771C7AB04800D4A284 /* ViewController.swift */,
 				9604BE791C7AB04800D4A284 /* Main.storyboard */,
+				9687222F1C7D37BE0067B834 /* MyScene.sks */,
 				9604BE7C1C7AB04800D4A284 /* Assets.xcassets */,
 				9604BE7E1C7AB04800D4A284 /* LaunchScreen.storyboard */,
 				9604BE811C7AB04800D4A284 /* Info.plist */,
@@ -125,6 +128,7 @@
 			files = (
 				9604BE801C7AB04800D4A284 /* LaunchScreen.storyboard in Resources */,
 				9604BE7D1C7AB04800D4A284 /* Assets.xcassets in Resources */,
+				968722301C7D37BE0067B834 /* MyScene.sks in Resources */,
 				9604BE7B1C7AB04800D4A284 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +289,7 @@
 				9604BE861C7AB04800D4A284 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
