@@ -17,29 +17,38 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var guessRangeLabel: UILabel!
     
-    @IBAction func guessInput(sender: AnyObject) {
-        let x = sender as! UITextField
-        messageToPlayer.text = x.text;
-        print("it works")
-    }
+    @IBOutlet weak var guessInput: UITextField!
     
     @IBAction func StepperValueChanged(sender: UIStepper) {
+        self.maxGuessValue = Int(pow(Double(10),Double(sender.value)))
         self.generateSecretNumber()
-        maxGuessValue = Int(pow(Double(10),Double(sender.value)))
+        print(self.secretNumber)
         self.setGuessLabel()
+    }
+    @IBAction func enterGuess(sender: UIButton) {
+        if(Int(self.guessInput.text!) == self.secretNumber){
+            self.messageToPlayer.text = "You got it!";
+        }
+        else if (Int(self.guessInput.text!) > self.secretNumber){
+            self.messageToPlayer.text = "Guess is too high";
+        }
+        else {
+            self.messageToPlayer.text = "Guess is too low";
+        }
     }
     
     func setGuessLabel(){
-        self.guessRangeLabel.text = "1 and " + String(maxGuessValue)
+        self.guessRangeLabel.text = "1 and " + String(self.maxGuessValue)
     }
     
     func generateSecretNumber(){
-        self.secretNumber = Int(arc4random_uniform(UInt32(maxGuessValue)) + 1)
+        self.secretNumber = Int(arc4random_uniform(UInt32(self.maxGuessValue)) + 1)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.maxGuessValue = 10
+        self.generateSecretNumber()
         self.setGuessLabel()
         // Do any additional setup after loading the view, typically from a nib.
     }

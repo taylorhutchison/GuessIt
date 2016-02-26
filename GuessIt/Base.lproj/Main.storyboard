@@ -27,7 +27,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Difficulty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdi-UC-Yhb">
                                 <rect key="frame" x="499" y="522" width="69" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="rtb-Vy-yLo"/>
+                                    <constraint firstAttribute="height" constant="21" id="DYm-zo-ynQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -36,7 +36,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess a number between" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Tu-Lm-Czw">
                                 <rect key="frame" x="20" y="20" width="548" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="P7P-Il-fLj"/>
+                                    <constraint firstAttribute="height" constant="21" id="wcy-rl-0tK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -45,7 +45,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 and 10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdu-Yg-NHs">
                                 <rect key="frame" x="20" y="49" width="560" height="66"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="y9n-8z-ziA"/>
+                                    <constraint firstAttribute="height" constant="66" id="shY-bb-Y3R"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -54,45 +54,52 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0V2-Lo-rh0">
                                 <rect key="frame" x="252" y="140" width="97" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="97" id="xuM-60-Adu"/>
+                                    <constraint firstAttribute="width" constant="97" id="qpb-CQ-niz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                <connections>
-                                    <action selector="guessInput:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="2PY-PP-Dpv"/>
-                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fr7-1g-4fu">
                                 <rect key="frame" x="20" y="257" width="560" height="165"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="165" id="1iJ-Iz-xEM"/>
+                                    <constraint firstAttribute="height" constant="165" id="iyr-zr-mfb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQZ-M7-3gG">
+                                <rect key="frame" x="279" y="219" width="43" height="30"/>
+                                <state key="normal" title="Guess"/>
+                                <connections>
+                                    <action selector="enterGuess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g4o-tu-JY4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="DYJ-WB-g4T" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="0x0-v1-cCB"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4Tu-Lm-Czw" secondAttribute="trailing" constant="12" id="16u-27-oNC"/>
-                            <constraint firstItem="Qdu-Yg-NHs" firstAttribute="leading" secondItem="Fr7-1g-4fu" secondAttribute="leading" id="57Z-bR-DS1"/>
-                            <constraint firstItem="DYJ-WB-g4T" firstAttribute="trailing" secondItem="Fr7-1g-4fu" secondAttribute="trailing" id="5gz-od-7Ph"/>
-                            <constraint firstItem="Fr7-1g-4fu" firstAttribute="trailing" secondItem="Qdu-Yg-NHs" secondAttribute="trailing" id="6Do-Au-pkw"/>
-                            <constraint firstItem="4Tu-Lm-Czw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="B6v-P4-M19"/>
-                            <constraint firstItem="4Tu-Lm-Czw" firstAttribute="trailing" secondItem="Bdi-UC-Yhb" secondAttribute="trailing" id="F88-vc-Any"/>
-                            <constraint firstItem="4Tu-Lm-Czw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="LLX-U2-rqv"/>
-                            <constraint firstItem="DYJ-WB-g4T" firstAttribute="centerX" secondItem="Bdi-UC-Yhb" secondAttribute="centerX" id="QTy-ww-38w"/>
-                            <constraint firstAttribute="bottom" secondItem="DYJ-WB-g4T" secondAttribute="bottom" constant="20" symbolic="YES" id="Y9r-9o-rwv"/>
-                            <constraint firstItem="Qdu-Yg-NHs" firstAttribute="top" secondItem="4Tu-Lm-Czw" secondAttribute="bottom" constant="8" symbolic="YES" id="bc4-xS-0dI"/>
-                            <constraint firstItem="0V2-Lo-rh0" firstAttribute="top" secondItem="Qdu-Yg-NHs" secondAttribute="bottom" constant="25" id="bdr-qw-4iP"/>
-                            <constraint firstItem="0V2-Lo-rh0" firstAttribute="centerX" secondItem="Qdu-Yg-NHs" secondAttribute="centerX" id="ksf-Nq-9lu"/>
-                            <constraint firstItem="Fr7-1g-4fu" firstAttribute="top" secondItem="0V2-Lo-rh0" secondAttribute="bottom" constant="87" id="qsk-EJ-sZS"/>
-                            <constraint firstItem="DYJ-WB-g4T" firstAttribute="top" secondItem="Bdi-UC-Yhb" secondAttribute="bottom" constant="8" symbolic="YES" id="quB-5W-NjZ"/>
-                            <constraint firstItem="4Tu-Lm-Czw" firstAttribute="leading" secondItem="Qdu-Yg-NHs" secondAttribute="leading" id="yvW-iQ-xCN"/>
+                            <constraint firstItem="Fr7-1g-4fu" firstAttribute="leading" secondItem="Qdu-Yg-NHs" secondAttribute="leading" id="7Xi-FW-Ynk"/>
+                            <constraint firstAttribute="bottom" secondItem="DYJ-WB-g4T" secondAttribute="bottom" constant="20" symbolic="YES" id="7ug-8E-SQb"/>
+                            <constraint firstItem="Bdi-UC-Yhb" firstAttribute="trailing" secondItem="4Tu-Lm-Czw" secondAttribute="trailing" id="8Xm-1i-OXQ"/>
+                            <constraint firstItem="DYJ-WB-g4T" firstAttribute="top" secondItem="Bdi-UC-Yhb" secondAttribute="bottom" constant="8" symbolic="YES" id="8eX-Et-llT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4Tu-Lm-Czw" secondAttribute="trailing" constant="12" id="C4f-6J-0G1"/>
+                            <constraint firstItem="Qdu-Yg-NHs" firstAttribute="top" secondItem="4Tu-Lm-Czw" secondAttribute="bottom" constant="8" symbolic="YES" id="Gss-FS-mQ0"/>
+                            <constraint firstItem="eQZ-M7-3gG" firstAttribute="top" secondItem="0V2-Lo-rh0" secondAttribute="bottom" constant="49" id="OF5-r5-FE1"/>
+                            <constraint firstItem="4Tu-Lm-Czw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Oc5-Cv-GAC"/>
+                            <constraint firstItem="Qdu-Yg-NHs" firstAttribute="centerX" secondItem="0V2-Lo-rh0" secondAttribute="centerX" id="Sib-U7-ZtV"/>
+                            <constraint firstItem="4Tu-Lm-Czw" firstAttribute="leading" secondItem="Qdu-Yg-NHs" secondAttribute="leading" id="Zrf-9k-ElM"/>
+                            <constraint firstItem="Fr7-1g-4fu" firstAttribute="trailing" secondItem="DYJ-WB-g4T" secondAttribute="trailing" id="aDp-m5-So8"/>
+                            <constraint firstItem="0V2-Lo-rh0" firstAttribute="top" secondItem="Qdu-Yg-NHs" secondAttribute="bottom" constant="25" id="buk-wI-8MY"/>
+                            <constraint firstItem="0V2-Lo-rh0" firstAttribute="centerX" secondItem="eQZ-M7-3gG" secondAttribute="centerX" id="dyu-At-Ely"/>
+                            <constraint firstItem="Fr7-1g-4fu" firstAttribute="top" secondItem="eQZ-M7-3gG" secondAttribute="bottom" constant="8" symbolic="YES" id="gej-uk-daL"/>
+                            <constraint firstItem="DYJ-WB-g4T" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="kyb-KD-SG7"/>
+                            <constraint firstItem="Qdu-Yg-NHs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rJy-39-Trb"/>
+                            <constraint firstItem="Qdu-Yg-NHs" firstAttribute="trailing" secondItem="Fr7-1g-4fu" secondAttribute="trailing" id="ueE-Xu-AcI"/>
+                            <constraint firstItem="Bdi-UC-Yhb" firstAttribute="centerX" secondItem="DYJ-WB-g4T" secondAttribute="centerX" id="v2G-bv-fu8"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="guessInput" destination="0V2-Lo-rh0" id="Uwa-JC-uhu"/>
                         <outlet property="guessRangeLabel" destination="Qdu-Yg-NHs" id="PkW-mT-9co"/>
                         <outlet property="messageToPlayer" destination="Fr7-1g-4fu" id="IzW-rX-unG"/>
                     </connections>
